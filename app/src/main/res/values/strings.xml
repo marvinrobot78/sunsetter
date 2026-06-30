@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Sunsetter</string>
+    <string name="sunrise_complication_label">Sunrise</string>
+    <string name="sunset_complication_label">Sunset</string>
+    <string name="requesting_location">Requesting location…</string>
+</resources>
