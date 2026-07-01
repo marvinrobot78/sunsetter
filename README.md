@@ -1,14 +1,16 @@
 # Sunsetter
 
-A Wear OS complication app that displays today's **sunrise** and **sunset** times on your watch face.
+A Wear OS app — installed on-device as **"Arc of the sun"** — that displays today's **sunrise** and **sunset** times as complications, and bundles a matching watch face built with Watch Face Studio.
 
 ## Features
 
 - Shows sunrise and sunset times as arc (`RANGED_VALUE`) complications
-- Arc fill reflects how far through the day the event is (sunrise arc fills toward noon; sunset arc fills toward midnight)
+- Arc fill reflects daylight duration on a 24-hour clock
+- Bundled watch face shows the current sun position on a 24-hour clock
 - Calculates sun times from your device's GPS location
 - Caches the result daily — recalculates only once per day or when your location changes
 - Graceful fallbacks: defaults to 6:00 AM / 6:00 PM when no location is available
+- Bundles a Watch Face Format watch face whose Sunset/Sunrise arc complications are pre-wired to this app's data sources, so they populate automatically without manual setup
 
 ## Requirements
 
@@ -19,7 +21,7 @@ A Wear OS complication app that displays today's **sunrise** and **sunset** time
 
 1. Install the app on your watch.
 2. Open the app and grant location permission when prompted.
-3. Add the **Sunrise** or **Sunset** complication to a watch face via the watch face editor.
+3. Select **Arc of the sun** from the watch face picker — its Sunrise/Sunset arcs are already wired up. (You can also add the **Sunrise** or **Sunset** complication to any other watch face via the complication editor.)
 
 ## How it works
 
