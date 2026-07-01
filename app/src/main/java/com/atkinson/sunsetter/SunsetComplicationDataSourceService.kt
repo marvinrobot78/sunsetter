@@ -12,7 +12,7 @@ class SunsetComplicationDataSourceService : SuspendingComplicationDataSourceServ
     override suspend fun onComplicationRequest(request: ComplicationRequest): ComplicationData {
         val sunTimes = SunTimeRepository(this).getSunTimesForToday()
         return buildComplicationData(
-            value = (sunTimes.sunsetMinute - HALF_DAY).toFloat(),
+            value = sunTimes.sunsetMinute - HALF_DAY,
             text = minuteOfDayToTimeString(sunTimes.sunsetMinute)
         )
     }

@@ -67,9 +67,9 @@ class MainActivity : ComponentActivity() {
         val sunsetValue = sunTimes.sunsetMinute - HALF_DAY.toInt()
         showStatus(
             "Sunrise: ${minuteOfDayToTimeString(sunTimes.sunriseMinute)}\n" +
-            "  value: ${HALF_DAY.toInt() - sunTimes.sunriseMinute} / ${HALF_DAY.toInt()}\n\n" +
+            "Value: ${HALF_DAY.toInt() - sunTimes.sunriseMinute} / ${HALF_DAY.toInt()}\n\n" +
             "Sunset: ${minuteOfDayToTimeString(sunTimes.sunsetMinute)}\n" +
-            "  value: $sunsetValue / ${HALF_DAY.toInt()}"
+            "Value: $sunsetValue / ${HALF_DAY.toInt()}"
         )
         requestComplicationUpdates()
     }

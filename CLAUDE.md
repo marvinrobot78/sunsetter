@@ -54,10 +54,10 @@ Both services declare `UPDATE_PERIOD_SECONDS=3600` in the manifest. The system c
 
 | Dependency | Purpose |
 |---|---|
-| `androidx.wear.watchface:watchface-complications-data-source-ktx:1.2.1` | Complication data source API |
-| `com.google.android.gms:play-services-location:21.3.0` | `FusedLocationProviderClient` |
-| `org.shredzone.commons:commons-suncalc:3.9` | Sunrise/sunset calculation (zero transitive deps) |
-| `androidx.wear:wear:1.3.0` | `BoxInsetLayout` for round/square watch support |
+| `androidx.wear.watchface:watchface-complications-data-source-ktx:1.3.0` | Complication data source API |
+| `com.google.android.gms:play-services-location:21.4.0` | `FusedLocationProviderClient` |
+| `org.shredzone.commons:commons-suncalc:3.11` | Sunrise/sunset calculation (zero transitive deps) |
+| `androidx.wear:wear:1.4.0` | `BoxInsetLayout` for round/square watch support |
 
 ## First-run flow
 
